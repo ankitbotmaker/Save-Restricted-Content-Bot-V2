@@ -22,11 +22,7 @@ from pyrogram import filters, Client
 from devgagan import app, userrbot
 from config import API_ID, API_HASH, FREEMIUM_LIMIT, PREMIUM_LIMIT, OWNER_ID, DEFAULT_SESSION
 
-dispatcher.add_handler(CommandHandler("generate_code", create_redeem_code))
-dispatcher.add_handler(CommandHandler("redeem", redeem_code))
-from devgagan.modules.redeem_system 
-import create_redeem_code, redeem_code
-from devgagan.modules.redeem_system import create_redeem_code
+from devgagan.modules.redeem_system import create_redeem_code, redeem_code
 from devgagan.core.func import *
 from devgagan.core.mongo import db
 from pyrogram.errors import FloodWait
