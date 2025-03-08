@@ -26,7 +26,7 @@ dispatcher.add_handler(CommandHandler("generate_code", create_redeem_code))
 dispatcher.add_handler(CommandHandler("redeem", redeem_code))
 from devgagan.modules.redeem_system 
 import create_redeem_code, redeem_code
-from devgagan.core.get_func import get_msg
+from devgagan.modules.redeem_system import create_redeem_code
 from devgagan.core.func import *
 from devgagan.core.mongo import db
 from pyrogram.errors import FloodWait
