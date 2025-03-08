@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-
+from devgagan.modules.create_redeem_code import generate_redeem_code
 OWNER_ID = 7792539085  # Owner ID यहाँ डालो
 
 @Client.on_message(filters.command("generate_code") & filters.user(OWNER_ID))
