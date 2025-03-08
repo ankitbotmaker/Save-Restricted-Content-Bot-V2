@@ -21,4 +21,4 @@ mutagen
 yt-dlp
 speedtest-cli
 python-telegram-bot
-create_redeem_code
+pyrogram
