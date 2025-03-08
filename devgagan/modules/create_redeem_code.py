@@ -1,9 +1,8 @@
-import random
-import string
+from pyrogram import Client, filters
 
-def generate_redeem_code():
-    """Generate a unique 10-character redeem code."""
-    return ''.join(random.choices(string.ascii_uppercase + string.digits, k=10))
+OWNER_ID = 7792539085  # Owner ID यहाँ डालो
 
-if __name__ == "__main__":
-    print("Generated Code:", generate_redeem_code())
+@Client.on_message(filters.command("generate_code") & filters.user(OWNER_ID))
+async def generate_code(client, message):
+    print("✅ Generate Code Command Triggered")  # Debugging के लिए
+    await message.reply_text("✅ Redeem Code: ABCD1234")  # Static Response
