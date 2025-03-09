@@ -21,7 +21,7 @@ from pyrogram import filters, Client
 from devgagan import app, userrbot
 from config import API_ID, API_HASH, FREEMIUM_LIMIT, PREMIUM_LIMIT, OWNER_ID, DEFAULT_SESSION
 
-from devgagan.modules.create_redeem_code import generate_redeem_code
+from .create_redeem_code import generate_redeem_code
 from devgagan.core.func import *
 from devgagan.core.mongo import db
 from pyrogram.errors import FloodWait
