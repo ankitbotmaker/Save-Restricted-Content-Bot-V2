@@ -85,8 +85,8 @@ async def token_handler(client, message):
             image_url,
             caption=(
                 "Hi 👋 Welcome, Wanna intro...?\n\n"
-                "✳️ <b>I can save posts from channels or groups where forwarding is off. I can download videos/audio from YT, INSTA, ... social platforms<b>\n"
-                "✳️ Simply send the post link of a public channel. For private channels, do /login. Send /help to know more."
+                "**✳️ I can save posts from channels or groups where forwarding is off. I can download videos/audio from YT, INSTA, ... social platforms**\n"
+                "**✳️ Simply send the post link of a public channel. For private channels, do /login. Send /help to know more.**"
             ),
             reply_markup=keyboard
         )
